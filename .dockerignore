@@ -1,0 +1,8 @@
+# Ignore
+.dockerignore
+Dockerfile.dev
+docker-compose-dev.yml
+
+# Allow files and directories
+!/environment
+!/front

@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  front-end:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: cbi-front
+    env_file:
+      - ./environment/cbi-dev.env
+    ports:
+      - 8080:8080
+    volumes:
+      - ./environment:/home/root/cbi-tcc-project/environment/:rw
+      - ./front:/home/root/cbi-tcc-project/front/:rw
