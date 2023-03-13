@@ -1,4 +1,8 @@
 # docker compose -f docker-compose-dev.yml up --build
 FROM node:lts-alpine
 WORKDIR /home/root/cbi-tcc-project/
+
+EXPOSE 8080
+EXPOSE 1234
+
 ENTRYPOINT [ "tail", "-f", "/dev/null" ]

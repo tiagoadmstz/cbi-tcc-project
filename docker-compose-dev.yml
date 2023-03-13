@@ -9,7 +9,8 @@ services:
     env_file:
       - ./environment/cbi-dev.env
     ports:
-      - 8080:8080
+      - "8080:8080"
+      - "1234:1234"
     volumes:
       - ./environment:/home/root/cbi-tcc-project/environment/:rw
       - ./front:/home/root/cbi-tcc-project/front/:rw
